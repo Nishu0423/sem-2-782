@@ -80,9 +80,6 @@ function calculateResult() {
                 <span class="pass-badge ${resultClass}">${resultStatus}</span>
             </span>
         </div>
-    ;
-
+    `;
     resultBox.classList.remove("hidden");
-    }
 }
-
