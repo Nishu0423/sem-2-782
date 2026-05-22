@@ -1,21 +1,17 @@
  let employees = [];
-  function addEmployee()
-   {    
+  function addEmployee()  {    
      let name = document.getElementById("name").value;    
      let empId = document.getElementById("empId").value;    
      let salary = parseFloat(document.getElementById("salary").value);    
      let dept = document.getElementById("dept").value;    
-     if (name === "" || empId === "" || isNaN(salary) || dept === "")
-         {        
+     if (name === "" || empId === "" || isNaN(salary) || dept === "") {        
              alert("Please fill all fields properly");        
-             return;    
-         }     
+             return;     }     
      let employee = {        
          name: name,        
          id: empId,        
          salary: salary,        
-         department: dept    
-     };    
+         department: dept     };    
      employees.push(employee);    
      alert("Employee Added Successfully!");    
      document.getElementById("name").value = "";    
@@ -29,8 +25,7 @@
             Name: ${emp.name} |             
             ID: ${emp.id} |             
             Salary: ₹${emp.salary} |             
-            Dept: ${emp.department} <br>`;     
-        });     
+            Dept: ${emp.department} <br>`;     });     
     document.getElementById("output").innerHTML = output; }  
     function filterSalary() {     
         let filtered = employees.filter(emp => emp.salary > 50000);     
@@ -48,13 +43,11 @@
         if (employees.length === 0) {         
         document.getElementById("output").innerHTML =             
         "<h3>No employee records available</h3>";         
-        return;     
-            }      
+        return;      }      
             let total = employees.reduce((sum, emp) => sum + emp.salary, 0);     
             let avg = total / employees.length;     
             document.getElementById("output").innerHTML =         
-            "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>"; 
-    }  
+            "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>";  }  
     function countDepartment() {     
         let deptName = prompt("Enter Department Name:");     
         let count = employees.filter(emp => emp.department === deptName).length;     
