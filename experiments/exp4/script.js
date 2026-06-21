@@ -41,6 +41,7 @@ function calculateResult() {
         resultStatus = "FAIL";
         resultClass = "fail";}
     let resultBox = document.getElementById("resultBox");
+    resultBox.classList.remove("d-none");
     resultBox.innerHTML = `
         <h2>📊 Result Summary</h2>
         <div class="result-item">
