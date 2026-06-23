@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>largest</title>
+    </head>
+    <body>
+        <h1>finding lagest no</h1>
+        <p>enter 5 digits</p>
+        
+        <input class="number" id="num1" placeholder="no.1">
+        <input class="number" id="num2" placeholder="no.2">
+        <input class="number" id="num3" placeholder="no.3">
+        <input class="number" id="num4" placeholder="no.4">
+        <input class="number" id="num5" placeholder="no.5">
+        <button class="result" onclick="largest()" >find</button>
+        <script>
+            function largest(){
+                let n1= getElementById("num1");
+            let n2= getElementById("num1");
+            let n3= getElementById("num1");
+            let n4= getElementById("num1");
+            let n5= getElementById("num1");
+            let larg=n1;
+            if(n2>larg){
+                larg=n2;
+            }else if(n3>larg){
+                large=n3;
+            }else if(n4>larg){
+                large=n4;
+            }else if (n5>larg){
+                large=n5;
+            }
+            result.innerhtml `"largest No is :"${larg} ` ;
+            }
+            
+            
+
+        </script>
+    </body>
+</html>
